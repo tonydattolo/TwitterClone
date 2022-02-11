@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div data-username = "{{ username }}" > prof = {{ username }} <br/>
+                           user: {{profile.user}}<br/>
+                           bio: {{profile.bio}}  <br/>
+                           id:  {{profile.id}}<br/>
+                           location:  {{profile.locations}}<br/>
+                           user_id: {{profile.user_id}}      <br/>             
+<br/># Choices are: bio, id, locations, user, user_id
+</div>
+{% endblock content %}
+

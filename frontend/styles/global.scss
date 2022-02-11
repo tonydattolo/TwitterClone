@@ -1,0 +1,51 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+$light-color: black;
+$light-background: white;
+$dark-color: white;
+$dark-background: rgb(44, 44, 44);
+
+
+body {
+    color: $light-color;
+    background-color: $light-background;
+    & li {
+        color: $light-color !important;
+        & a {
+            color: $light-color !important;
+
+        }
+    }
+}
+
+body.dark-mode {
+    color: $dark-color;
+    background-color: $dark-background;
+    & li {
+        color: $dark-color !important;
+        & a {
+            color: $dark-color !important;
+        }
+    }
+    & div {
+        color: $dark-color !important;
+    }
+    & .card * {
+        background-color: $dark-background !important;
+        color: $dark-color;
+        border-color: white;
+        // & .card-header {
+        //     background-color: $dark-background !important;
+        //     color: $dark-color;
+        // }
+        // & .card-body {
+        //     background-color: $dark-background !important;
+        //     color: $dark-color;
+        // }
+
+    }
+}

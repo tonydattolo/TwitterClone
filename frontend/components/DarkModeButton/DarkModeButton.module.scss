@@ -1,0 +1,24 @@
+// .btn {
+//     background-color: red;
+    
+// }
+
+.darkModeButton {
+    margin-right: 10px;
+    background-color: rgb(44, 44, 44) !important;
+    color: lightgray !important;
+
+    &>.sunIcon {
+        box-shadow: 0 0 0 1px rgb(255, 196, 0) !important;
+    }
+}
+.lightModeButton {
+    margin-right: 10px;
+    background-color: whitesmoke !important;
+    color: orange !important;
+
+    &>.moonIcon {
+        box-shadow: 0 0 0 1px orange !important;
+    }
+
+}

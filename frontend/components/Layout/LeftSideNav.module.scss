@@ -1,0 +1,70 @@
+
+.nav {
+    border-right: 1px solid rgba(211, 211, 211, 0.6);
+    // border: 5px solid red;
+    height: 100vh;
+    width: 275px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    .logo {
+        padding-left: 12px;
+        padding-top: 12px;
+    }
+
+    .sidenavItem {
+        
+        font-size: 1.3rem;
+        padding: 12px;
+        width: fit-content;
+        // &:active {
+        //     font-weight: bold;
+        // }
+
+        .navLink {
+            color: black;
+            border-radius: 25px;
+            &:hover {
+                background-color: rgb(230, 230, 230);
+            }
+            .activeNavLink {
+                font-weight: bold;
+                color: red;
+            }
+            .navIconContainer {
+                width: 35px;
+                // border: 2px solid red;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .linkText{
+            padding-left: 12px;
+            // @respond('tablet') {
+
+            // }
+        }
+    }
+
+    .postButton {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+        border-radius: 25px;
+        width: 225px;
+    }
+
+    .createPageButton {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+        border-radius: 25px;
+        width: 225px;
+    }
+}
+

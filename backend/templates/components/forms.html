@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method='POST'> {% csrf_token %}
+    {{ form.as_p }}
+    <button type='submit' class='btn btn-secondary'>{% if btn_label %}
+        {{btn_label}} {% else %}Save{% endif %}</button>
+</form>
+curr user is
+{{ curr_prof.first_name }}
+{{ curr_prof }}
+
+{% endblock content %}
